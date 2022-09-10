@@ -1,6 +1,3 @@
-function isPalindrome(x: number): boolean {
-    const value:string = x.toString()
-    const reversedValue = value.split("").reverse().join("")
-    
-    return reversedValue === value ? true : false
+function isPalindrome(x: number): boolean {    
+    return x.toString().split("").reverse().join("") === x.toString() ? true : false
 };
